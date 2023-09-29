@@ -2,13 +2,31 @@
 List of CVES
 
 fix commit in top 3 position:  
-- CVE-2020-10673: 1645efbd392989cf015f459a91c999e59c921b15 - Fix #2660
-- CVE-2020-1925: 9f9aebde557b791f275d6156d8bec12ac334425d - [OLINGO-1416] Better header processing
+
+- CVE-2020-10673: Fix #2660
+- CVE-2020-1925: [OLINGO-1416] Better header processing
+- CVE-2020-10799: Fixes #229 - External entity loading disabled by d
+- CVE-2020-26259: Fix and document CVE-2020-26259
+- CVE-2017-7481: Fixing security issue with lookup returns not tain
+- CVE-2018-16984: Fixed CVE-2018-16984 -- Fixed password hash disclo
+
+
 
 no fix found:
+
 - CVE-2020-14366: na
 - CVE-2018-12036: na
+- CVE-2020-1961: na
+- CVE-2018-1000105: na
+- CVE-2019-11278: na
+- CVE-2018-8018: na
+
 
 fix commit position between 4 and 10
-- CVE-2015-5349: ac57a26fcb98aa17fe9534575cf5fdad00a1c839 - Escape spreadsheet formula in CSV export git-svn-i
-- CVE-2019-12402: 4ad5d80a6272e007f64a6ac66829ca189a8093b9 - unit tests for encoding logic 
+
+- CVE-2015-5349: Escape spreadsheet formula in CSV export git-svn-i
+- CVE-2019-12402: unit tests for encoding logic 
+- CVE-2016-8747: Fix intermittent test failure spotted during some
+- CVE-2019-10306: SECURITY-1341 Fixing SECURITY-1336 / CVE-2019-1003
+- CVE-2019-10770: Escape user input rendered to the response in the 
+- CVE-2017-12616: Correct regression in r1804604 that broke WebDAV.

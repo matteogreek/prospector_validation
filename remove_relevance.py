@@ -1,7 +1,7 @@
 import os
 from bs4 import BeautifulSoup
 
-html_directory = "reports/time_sorted/norules/"
+html_directory = "reports/"
 
 for file_name in os.listdir(html_directory):
     if file_name.endswith(".html"):
@@ -10,12 +10,16 @@ for file_name in os.listdir(html_directory):
         with open(file_path, 'r', encoding='utf-8') as file:
             soup = BeautifulSoup(file, 'html.parser')
 
-        for icon in soup.find_all("i", class_="fas fa-bullhorn"):
-            icon.decompose()
+            element = soup.find_all('i', class_='fa fa-star')
+            for e in element:
+                parent = e.find_parent()
+                parent.decompose()
 
-        for span in soup.find_all("span", class_="badge rounded-pill bg-primary", style="font-family: monospace;"):
-            span.decompose()
-    
+            element = soup.find_all('i', class_='fa fa-tag')
+            for e in element:
+                parent = e.find_parent()
+                parent.decompose()
+
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(str(soup))
 

@@ -1,7 +1,7 @@
 import os
 from bs4 import BeautifulSoup
 
-report_dir = "reports"
+report_dir = "reports/time_sorted/norules/"
 dir = os.listdir(report_dir)
 
 for file in dir:
